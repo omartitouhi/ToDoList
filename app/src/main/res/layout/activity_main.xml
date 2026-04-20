@@ -9,25 +9,31 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/horizontalLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/note"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_weight="4"
             android:ems="10"
-            android:inputType="text"
-            android:text="Name" />
+            android:hint="Add note ..."
+            android:inputType="text" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonadd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="Add" />
     </LinearLayout>
+
+    <ListView
+        android:id="@+id/itemliste"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
